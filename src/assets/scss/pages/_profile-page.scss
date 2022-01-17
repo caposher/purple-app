@@ -1,0 +1,25 @@
+.main-content {
+  .user-profile {
+    padding: 3em 0;
+    gap: 2em;
+    align-items: flex-start;
+  }
+
+  .user-personal-data {
+    background-color: aquamarine;
+    img {
+      max-width: 5em;
+      border-radius: 50%;
+    }
+  }
+  .user-data {
+    background-color: white;
+  }
+
+  .more-info {
+    max-width: 400px;
+    .links {
+      columns: 130px;
+    }
+  }
+}
