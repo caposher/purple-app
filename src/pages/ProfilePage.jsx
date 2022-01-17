@@ -44,7 +44,9 @@ class _ProfilePage extends Component {
                 <Page title='User profile'>
                   <Card sectioned>
                     <FormLayout>
-                      <DropZone accept='image/*' type='image' onDrop={() => {}}></DropZone>
+                      <DropZone accept='image/*' type='image' allowMultiple={false} onDrop={() => {}}>
+                        <DropZone.FileUpload actionTitle='Add file' actionHint='or drop files to upload' />
+                      </DropZone>
                       <TextField
                         value={user.jobTitle}
                         onChange={(value) => this.handleChange('jobTitle', value)}
