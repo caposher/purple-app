@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/purple-app/static/css/main.073c9b0a.css",
-    "main.js": "/purple-app/static/js/main.2692d69c.js",
+    "main.css": "/purple-app/static/css/main.95a72145.css",
+    "main.js": "/purple-app/static/js/main.795ec775.js",
     "static/js/787.16dd4bae.chunk.js": "/purple-app/static/js/787.16dd4bae.chunk.js",
-    "static/media/logo.svg": "/purple-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/osher-cappelli.png": "/purple-app/static/media/osher-cappelli.a3091f0e45135cfe1277.png",
+    "static/media/logo-text.svg": "/purple-app/static/media/logo-text.2efee3b4a1e72a117c6d8afc6b919e9f.svg",
     "index.html": "/purple-app/index.html",
-    "main.073c9b0a.css.map": "/purple-app/static/css/main.073c9b0a.css.map",
-    "main.2692d69c.js.map": "/purple-app/static/js/main.2692d69c.js.map",
+    "main.95a72145.css.map": "/purple-app/static/css/main.95a72145.css.map",
+    "main.795ec775.js.map": "/purple-app/static/js/main.795ec775.js.map",
     "787.16dd4bae.chunk.js.map": "/purple-app/static/js/787.16dd4bae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.2692d69c.js"
+    "static/css/main.95a72145.css",
+    "static/js/main.795ec775.js"
   ]
 }
