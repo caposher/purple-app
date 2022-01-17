@@ -6,11 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { store } from './store';
 import '@shopify/polaris/build/esm/styles.css';
+import { AppProvider } from '@shopify/polaris';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <AppProvider>
+        <App />
+      </AppProvider>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

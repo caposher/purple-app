@@ -1,11 +1,12 @@
+import { Avatar } from '@shopify/polaris';
 import { CompanyLogo } from './CompanyLogo';
 
 export function AppHeader() {
   return (
-    <header className='app-header container  flex space-between align-center '>
-      <CompanyLogo />
-      <div>
-        <img className='user-img' src={require('../assets/imgs/osher-cappelli.png')} alt='user' />
+    <header className='app-header   '>
+      <div className='container  flex space-between align-center maximum-size'>
+        <CompanyLogo />
+        <Avatar size='small' source={require('../assets/imgs/osher-cappelli.png')} />
       </div>
     </header>
   );

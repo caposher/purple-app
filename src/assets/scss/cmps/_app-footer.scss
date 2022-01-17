@@ -1,0 +1,32 @@
+.app-footer {
+  background-color: white;
+  box-shadow: 0px -2px 0 #eeeeef;
+
+  > * {
+    width: 100%;
+  }
+
+  .links {
+    width: 100%;
+    max-width: 410px;
+    height: 200px;
+    columns: 130px;
+    column-fill: auto;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    font-size: 16px;
+    > * {
+      font-weight: bold;
+      line-height: 2.4em;
+    }
+  }
+  .link-footer {
+    box-shadow: 0px -2px 0 #eeeeef;
+
+    h5 {
+      padding-left: 1.5em;
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+}
