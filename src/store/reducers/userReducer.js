@@ -1,10 +1,13 @@
+// import imgFile from '../../assets/imgs/osher-cappelli.png';
+const imgFile = require('../../assets/imgs/osher-cappelli.png');
+
 const INITIAL_STATE = {
   user: {
     name: 'Osher Cappelli',
     email: 'caposher@gmail.com',
     phonePre: '+972',
     phoneNumber: '546960645',
-    imgUrl: 'osher-cappelli.png',
+    imgFile,
     jobTitle: 'Developer',
     company: 'Purple',
     about:
