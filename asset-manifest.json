@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/purple-app/static/css/main.8bfb4c0f.css",
-    "main.js": "/purple-app/static/js/main.eb8286f8.js",
+    "main.css": "/purple-app/static/css/main.665a90f0.css",
+    "main.js": "/purple-app/static/js/main.9d8a29e9.js",
     "static/js/787.16dd4bae.chunk.js": "/purple-app/static/js/787.16dd4bae.chunk.js",
     "static/media/Roboto-Regular.ttf": "/purple-app/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
     "static/media/Roboto-Bold.ttf": "/purple-app/static/media/Roboto-Bold.75371f53f06181df75f1.ttf",
-    "static/media/osher-cappelli.png": "/purple-app/static/media/osher-cappelli.a3091f0e45135cfe1277.png",
+    "static/media/osher-cappelli.png": "/purple-app/static/media/osher-cappelli.16e64ffbf66736c7931f.png",
     "static/media/logo-text.svg": "/purple-app/static/media/logo-text.2efee3b4a1e72a117c6d8afc6b919e9f.svg",
     "index.html": "/purple-app/index.html",
-    "main.8bfb4c0f.css.map": "/purple-app/static/css/main.8bfb4c0f.css.map",
-    "main.eb8286f8.js.map": "/purple-app/static/js/main.eb8286f8.js.map",
+    "main.665a90f0.css.map": "/purple-app/static/css/main.665a90f0.css.map",
+    "main.9d8a29e9.js.map": "/purple-app/static/js/main.9d8a29e9.js.map",
     "787.16dd4bae.chunk.js.map": "/purple-app/static/js/787.16dd4bae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bfb4c0f.css",
-    "static/js/main.eb8286f8.js"
+    "static/css/main.665a90f0.css",
+    "static/js/main.9d8a29e9.js"
   ]
 }
