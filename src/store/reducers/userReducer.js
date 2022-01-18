@@ -1,4 +1,3 @@
-// import imgFile from '../../assets/imgs/osher-cappelli.png';
 const imgFile = require('../../assets/imgs/osher-cappelli.png');
 
 const INITIAL_STATE = {

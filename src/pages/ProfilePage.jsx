@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
 import { updateUser } from '../store/actions/userActions';
-import { Page, Card, FormLayout, TextField, Layout, Select, DropZone, Avatar, Heading } from '@shopify/polaris';
+import { Page, Card, FormLayout, TextField, Layout, Select, DropZone, Avatar, Heading, Button } from '@shopify/polaris';
 
 class _ProfilePage extends Component {
   state = {
@@ -12,7 +12,7 @@ class _ProfilePage extends Component {
     const inputFields = [
       { field: 'jobTitle', label: 'Job title', params: { maxLength: 20 } },
       { field: 'company', label: 'Current company', params: { maxLength: 20 } },
-      { field: 'about', label: 'Account email', params: { multiline: 12 } },
+      { field: 'about', label: 'About myself', params: { multiline: 12 } },
     ];
 
     return inputFields.map((input) => {
@@ -22,7 +22,6 @@ class _ProfilePage extends Component {
           value={this.props.user[input.field]}
           onChange={(value) => this.handleChange(input.field, value)}
           onFocus={() => this.setState({ showLoader: true })}
-          onBlur={() => this.setState({ showLoader: false })}
           label={input.label}
           maxLength={input.params.maxLength}
           multiline={input.params.multiline}
@@ -77,7 +76,6 @@ class _ProfilePage extends Component {
                           options={[{ label: '+972', key: '1' }]}
                           onChange={(value) => this.handleChange('phonePre', value)}
                           onFocus={() => this.setState({ showLoader: true })}
-                          onBlur={() => this.setState({ showLoader: false })}
                           value={user.phonePre}
                         />
                         <TextField
@@ -85,9 +83,13 @@ class _ProfilePage extends Component {
                           error={this.isInvalid()}
                           onChange={(value) => this.handleChange('phoneNumber', value)}
                           onFocus={() => this.setState({ showLoader: true })}
-                          onBlur={() => this.setState({ showLoader: false })}
                         />
                       </FormLayout.Group>
+                      {this.state.showLoader && (
+                        <div class='saveBtn'>
+                          <Button onClick={() => this.setState({ showLoader: false })}>Save</Button>
+                        </div>
+                      )}
                     </FormLayout>
                   </Card>
                 </Page>
