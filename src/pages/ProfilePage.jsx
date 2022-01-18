@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
 import { updateUser } from '../store/actions/userActions';
-import { CompanyLogo } from '../cmps/CompanyLogo';
 import { Page, Card, FormLayout, TextField, Layout, Select, DropZone, Avatar, Heading } from '@shopify/polaris';
 
 class _ProfilePage extends Component {
@@ -38,7 +37,6 @@ class _ProfilePage extends Component {
   };
 
   handleDrop = (files, acceptedFile) => {
-    // debugger;
     const img = URL.createObjectURL(acceptedFile[0]);
     const user = { ...this.props.user, imgFile: img };
     this.props.updateUser(user);
@@ -57,7 +55,6 @@ class _ProfilePage extends Component {
             <Layout.Section secondary>
               <div className='user-personal-data'>
                 <Card sectioned>
-                  {/* <Avatar size='large' name={user.name} source={require('../assets/imgs/osher-cappelli.png')} /> */}
                   <Avatar size='large' name={user.name} source={user.imgFile} />
                   <Heading variation='strong'>{user.name}</Heading>
                   <p>{user.email}</p>
@@ -75,30 +72,6 @@ class _ProfilePage extends Component {
                         </DropZone>
                       )}
                       {this.renderInputs()}
-                      {/* <TextField
-                        value={user.jobTitle}
-                        onChange={(value) => this.handleChange('jobTitle', value)}
-                        onFocus={() => this.setState({ showLoader: true })}
-                        onBlur={() => this.setState({ showLoader: false })}
-                        label='Job title'
-                        maxLength={20}
-                      />
-                      <TextField
-                        value={user.company}
-                        onChange={(value) => this.handleChange('company', value)}
-                        onFocus={() => this.setState({ showLoader: true })}
-                        onBlur={() => this.setState({ showLoader: false })}
-                        label='Current company'
-                        maxLength={20}
-                      />
-                      <TextField
-                        value={user.about}
-                        onChange={(value) => this.handleChange('about', value)}
-                        onFocus={() => this.setState({ showLoader: true })}
-                        onBlur={() => this.setState({ showLoader: false })}
-                        label='Account email'
-                        multiline={12}
-                      /> */}
                       <FormLayout.Group title='Phone number'>
                         <Select
                           options={[{ label: '+972', key: '1' }]}
